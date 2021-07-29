@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario de registracion</title>
+</head>
+<link rel = "stylesheet" href = "/css/style.css">
+
+<body>
+  <header class =  "main-header">
+    <div class = "main-header-top-bar">
+      <img src = "/imagenes/logo-mercado-liebre.svg" class= "logo">
+    </div>
+  </header>
+  
+  <h1>Completá tus datos</h1>
+  <form action="/" method="POST" class="control-formulario">
+    
+    <div>
+    <label class="labelfor">Nombre y Apellido:</label>
+    <div><input type = "text" name= "nombre y apellido" id= "nombre" required class="nombre-apellido" ></div>
+    </div>
+
+    <div>
+    <label class="labelfor">Usuario:</label>
+    <div><input type="email" name="usuario" id="usuario" required class="usuario1" placeholder="ingresa tu email"></div>
+    </div> 
+    <div>
+    <label class="labelfor">Fecha Nacimiento:</label>
+    <div></div>  <input type= "date" name= "nacimiento" id= "nacimiento" class= "nacimiento" required></div>
+    </div> 
+    <div>
+    <label class="labelfor">Domicilio:</label>
+    <div><input type= "texto" name= "domicilio" id= "domicilio" required class="domicilio" ></div>
+    </div>
+    
+    <div class= "perfil">
+    <p class="labelfor">Perfil del usuario: </p>
+      <input type="radio" name="perfil usuario" value = "Comprador" ><label for= "">Comprador</label>
+      <input type="radio" name="perfil usuario" value= "vendedor" ><label for= "">Vendedor</label>
+    </div>
+    <br>
+    <div>
+      <label for = "categorias" class="labelfor">Categorias:</label>
+        <input type="checkbox" id="electro" value="electro"> Electro</label>
+        <input type="checkbox" id="moda" value="moda"> Moda</label>
+        <input type="checkbox" id="hogar" value="hogar"> Hogar</label>
+        <input type="checkbox" id="jugueteria" value="jugueteria"> Jugueteria</label>
+        <input type="checkbox" id="vida sana" value="vida sana"> Vida sana</label>
+      </div> 
+      <br>
+      <label for = "contraseña" class="labelfor">Contraseña</label>
+    <div><input type="password" name="contraseña" id="contraseña" class= "contraseña1" required placeholder="Ingresar contraseña"></div>
+   
+   
+       <label for = "password" class="labelfor">Confirmar Contraseña:</label>
+      <div><input type="password" name="password" id="password" class= "contraseña1" required placeholder="Confirmar contraseña"></div>  
+      
+       <label for = "foto perfil"> Foto perfil:</label>
+      <div><input type= "file" name= "foto" multiple accept=".jpg" required></div>
+            
+      </select>
+<div>
+      <button type="submit" class= "envio" value="Enviar">ENVIAR </button>
+      <button type="reset" class= "borrar" value="borrar">BORRAR </button>
+    </div>
+</form>
+</body>
+
+</html>
+
+
